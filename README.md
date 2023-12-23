@@ -55,4 +55,4 @@ An amazon employee told me "have fun with that" when I asked him how to delete d
 
 # Inscription
 
-Thanks to @HennieLP for helping me with the script and the README (also thanks to him I didn't have to root my phone to get a HTTP Sniffer running <3)
+Thanks to @[HennieLP](https://github.com/hennielp) for helping me with the script and the README (also thanks to him I didn't have to root my phone to get a HTTP Sniffer running <3)
