@@ -12,8 +12,8 @@ I do not know **anything** about how the Alexa API works. I just reverse enginee
 # Prerequisites
 
 The script is written in Python 3.11 and requires the following packages:
-- requests
-_see requirements.txt for more details_ 
+- requests  
+_see requirements.txt for more details_   
 Run `pip install -r requirements.txt` to install required packages
 
 To get the needed HTTP headers and cookie information, you will need to download some kind of http traffic sniffer.  
