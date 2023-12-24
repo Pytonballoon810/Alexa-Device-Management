@@ -5,6 +5,10 @@ This repository contains a Python script for managing devices connected to the A
 
 ⚠️⚠️ **Warning:** This script is not intended to be used for malicious purposes. I am not responsible for any damage caused by the use of this script. Use at your own risk. Also note that this script is not officially supported by Amazon and may break at any time. It is also not recommended to use this script for a small number of devices, as it takes a while to set up. If you only want to delete a few devices, it is probably faster to do it manually. ⚠️⚠️
 
+# Heads up
+
+I do not know **anything** about how the Alexa API works. I just reverse engineered the API calls the Alexa app makes and wrote a script to automate them. I do not know if this script will work for you. I left as many comments as possible here and in the script itself, so you can try and debug and use it yourself. If you have any questions, feel free to open an issue or write a comment in the [r/AmazonEcho](https://www.reddit.com/r/amazonecho/comments/18phvps/manage_amazon_alexa_devices_with_python/?utm_source=share&utm_medium=web2x&context=3) or [r/HomeAssistant](https://www.reddit.com/r/homeassistant/comments/18phwta/manage_amazon_alexa_devices_with_python/?utm_source=share&utm_medium=web2x&context=3) subreddit posts or alternatively create an issue in the Git repo. I will try and answer all of them as soon as possible.
+
 # Prerequisites
 
 The script is written in Python 3.11 and requires the following packages:
@@ -49,6 +53,15 @@ You also need to have a valid Amazon account and access to the account you want 
 2. Try and change the `USER_AGENT` variable in the script to the one you find in the HTTP Sniffer in both the requests you copied the headers from.
 3. If you used step 11.1 try and change the `CSRF` variable in the script to the one you find in the HTTP Sniffer in the `DELETE` request.
 4. If you used the script some time ago, try and update the `GET_COOKIE` variable in the script to the one you find in the HTTP Sniffer in the `GET` and/or `DELETE` request.
+
+# To be done (maybe)
+1. Add functionality to sign by just using the email and password of the account and getting the access cookie(s) automatically this way.  
+    1.1. Possible problem: Amazon may block the account if it detects too many login attempts  
+    1.2. 2FA could pose a problem  
+2. Add UI for easier usage
+3. Add functionality for advanced filtering 
+
+__Note:__ _I am not actively working on this project anymore. If you want to add any of these features, feel free to open a pull request._
 
 # Inspiration
 
