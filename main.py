@@ -115,7 +115,7 @@ def delte_entities(delete_cookie = DELETE_COOKIE):
             device_type = str(item["description"]).replace("switch.", "").split(".", maxsplit=1)[0].lower()
             manufacturer = "".join(str(item["description"]).split(" ")[-2:]).lower()
             print(name, manufacturer)
-            if manufacturer.lower() == "homeassistant": # you are free to change this to the manufacturer you want to delete from. I used it to only delete entities integrated via the home assistant custom skill
+            if manufacturer.lower() == "homeassistant": # you are free to change this to the manufacturer you want to delete from. I used it to only delete entities integrated via the home assistant custom skill; this will most definitely be different if you do want to delete devices not integrated via Home Assistant 
                 name = name.lower().replace(" ", "_")
                 url = f"__URL__%3D%3D_{device_type}%23{name}" # replace __URL__ with the url you got from the http catcher. Should look something like this: https://eu-api-alexa.amazon.de/api/phoenix/appliance/SKILL_a_really_long_string_probably_the_skill_id%3D%3D
 
