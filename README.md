@@ -32,7 +32,7 @@ You also need to have a valid Amazon account and access to the account you want 
 9. Copy the value of the `Cookie` header and paste it into the `GET_COOKIE` variable in the script (Most likely, you will find the cookie value to be very long.)
 10. Copy the value of the `x-amzn-RequestId` header and paste it into the `GET_X_AMZN_REQUESTID` variable in the script
 11. Copy the value of the `x-amzn-alexa-app` header and paste it into the `GET_X_AMZN_ALEXA_APP` variable in the script  
-    **_11.1._** (only do if you want to try and speed up the process). You can now try to use the same cookie for both getting and deleting entities. If you want to do that leave the `CSRF` variable empty and skip to step 13
+    **_11.1._** (only do if you want to try and speed up the process). You can now try to use the same cookie for both getting and deleting entities. If you want to do that leave the `CSRF` variable empty and skip to step 18
 12. Go back to the Alexa app and click on one of the devices you want to delete and go to the `Device Settings` page
 13. Open the HTTP Sniffer and start a new capture
 14. In the Alexa app, click on the `Delete Device` button
@@ -44,6 +44,7 @@ You also need to have a valid Amazon account and access to the account you want 
 
 # Troubleshooting
 
+0. If you skipped step 11.1 previously and you get an error, please try and do steps 11.1 - 17.1 now, before trying anything else.
 1. Try and change the `HOST` address in the script to your local amazon address. You can find it in the HTTP Sniffer in both the requests you copied the headers from.
 2. Try and change the `USER_AGENT` variable in the script to the one you find in the HTTP Sniffer in both the requests you copied the headers from.
 3. If you used step 11.1 try and change the `CSRF` variable in the script to the one you find in the HTTP Sniffer in the `DELETE` request.
