@@ -18,8 +18,9 @@ Run `pip install -r requirements.txt` to install required packages
 
 To get the needed HTTP headers and cookie information, you will need to download some kind of http traffic sniffer.  
 I used [HTTP Catcher](https://apps.apple.com/de/app/http-catcher/id1445874902), which is only available for iOS.  
-Tools like [HTTP Toolkit](https://httptoolkit.tech/) should for android based devices, but this app requires a rooted device.  
-_Note: For using an HTTP Sniffer on android, you will need to install the certificate of the sniffer app on your device. Proxy based sniffers will not work, as the Alexa app (and most other ones like Google and PayPal) uses certificate pinning._
+Tools like [HTTP Toolkit](https://httptoolkit.tech/) should for android based devices, but this app requires a rooted device  
+(For this there is a workaround, somewhat at least. If you install `Windows subsystem for Andriod` on your device with google apps and `Magisk` following [this](https://ahaan.co.uk/article/top_stories/google-play-store-windows-11-install) guide you can simulate a rooted android device and don't have to backup (or delete) any data. Make sure you install a version with the `Nightly-with-Magisk-canary-MindTheGapps-RemovedAmazon` tag for the same setup as I used in my testing. This is probably the version you want to install anyways).  
+_Note: For using an HTTP Sniffer on android you will need to install the certificate of the sniffer app on your device. Proxy based sniffers will not work, as the Alexa app (and most other ones like Google and PayPal) uses certificate pinning._
 
 You also need to have a valid Amazon account and access to the account you want to delete entities from.
 
